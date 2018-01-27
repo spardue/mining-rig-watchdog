@@ -1,6 +1,7 @@
 #!/bin/sh
-source config
+source ./config
 cd $WATCH_DOG_HOME 
+echo $WATCH_DOG_HOME
 ./powercycle 
 sleep 10
 ./powerbutton
