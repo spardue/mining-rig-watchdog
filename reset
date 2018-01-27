@@ -1,0 +1,5 @@
+#!/bin/sh
+cd /home/pi
+./powercycle 
+sleep 10
+./powerbutton

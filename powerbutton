@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+gpio mode 0 out
+gpio write 0 1
+gpio write 0 0
+sleep 3
+gpio write 0 1
+

@@ -1,0 +1,5 @@
+#/bin/sh
+source ./config
+curl -s -X GET "https://api.nanopool.org/v1/eth/reportedhashrate/$ETH_ADDRESS" | jq '.["data"]' 
+
+
