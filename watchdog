@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 SHELL=/bin/sh PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
-nc -v 192.168.69.243 3333 -w 5 || /home/pi/reset
+nc -v 192.168.69.243 3333 -w 5 || /home/pi/mining-rig-watchdog/reset
 

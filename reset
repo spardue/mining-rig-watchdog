@@ -1,5 +1,6 @@
 #!/bin/sh
-cd /home/pi
+source config
+cd $WATCH_DOG_HOME 
 ./powercycle 
 sleep 10
 ./powerbutton
