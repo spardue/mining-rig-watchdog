@@ -3,6 +3,11 @@
 gpio mode 0 out
 gpio write 0 1
 gpio write 0 0
-sleep 3
+if [ -z "$1" ]; then
+	sleep 3
+else 
+	sleep $1
+fi
+
 gpio write 0 1
 

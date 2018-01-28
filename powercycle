@@ -3,5 +3,9 @@
 gpio mode 29 out
 
 gpio write 29 1
-sleep 60
+if [ -z "$1" ]; then
+	sleep 60
+else 
+	sleep $1
+fi
 gpio write 29 0
