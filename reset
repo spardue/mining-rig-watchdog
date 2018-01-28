@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 source ./config
 cd $WATCH_DOG_HOME 
 echo $WATCH_DOG_HOME
