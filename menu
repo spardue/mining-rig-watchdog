@@ -1,0 +1,7 @@
+#/bin/bash
+source ./config
+whiptail --title "Mining Rig Watchdog" --menu "Choose a command" 25 78 16 \
+	"reset" "Powercycle then powerbutton" \
+	"powerbutton" "Press the powerbutton" \
+	"powercycle" "Flip the physical switch"  2> out
+./`cat out` | whiptail --guage "Processing..." 6 50 0
