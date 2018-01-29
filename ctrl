@@ -1,0 +1,15 @@
+#/bin/bash
+if [ ! -f ./config ]; then 
+    ./setup.sh
+fi
+
+source ./config
+
+while true; do
+
+	whiptail --title "Watchdog controller" --menu "Choose a command" 25 78 16 \
+		"reset" "Powercycle then powerbutton" \
+		"powerbutton" "Press the powerbutton" \
+		"powercycle" "Flip the physical switch"  2> /var//tmp/out || exit
+	./`cat /var/tmp/out` 
+done
