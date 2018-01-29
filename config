@@ -1,2 +1,2 @@
-WATCH_DOG_HOME=/home/pi/mining-rig-watchdog
-ETH_WALLET=0xf0be6799b659e85ec7c85aff4cc289ee01b658b4
+WATCH_DOG_HOME=
+ETH_WALLET=
