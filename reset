@@ -2,6 +2,7 @@
 source ./config
 cd $WATCH_DOG_HOME 
 echo $WATCH_DOG_HOME
+./powerbutton 10
 ./powercycle 
 sleep 10
 ./powerbutton
