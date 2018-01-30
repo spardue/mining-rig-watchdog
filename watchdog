@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-SHELL=/bin/sh PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
-/home/pi/mining-rig-watchdog/test-claymore ||  {
-	date +%s > /home/pi/mining-rig-watchdog/resets.log
-	/home/pi/mining-rig-watchdog/reset
+SHELL=/bin/bash PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
+cd /home/pi/mining-rig-watchdog
+./test-claymore ||  {
+	date +%s >> ./reset.log
+	./reset
 }
 
