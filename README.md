@@ -10,4 +10,6 @@ Uses a Raspberry Pi hard wired onto the motherboard of a mining rig and a switch
   * This allows the Pi to safely "press" the power button on a motherboard.
 * [Iot Relay](http://a.co/ge42GJ0)
   * Enables the Pi to powercycle all the hardware compontents (basically, lets the Pi "flip" the surge protector switch).
-  
+### Software
+* [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) installed on the Pi.
+* [The GPIO Utility](http://wiringpi.com/download-and-install/) installed on the Pi.
