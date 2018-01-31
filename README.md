@@ -2,7 +2,7 @@
 Cryptocurrency Mining Rig Physical Watchdog. 
 Uses a Raspberry Pi hard wired onto the motherboard of a mining rig and a switch to reset if communication is lost with Claymore. Also includes a TUI to do manual resets.
 
-![Watchdog Image](https://user-images.githubusercontent.com/1810461/35637543-80db0f18-0682-11e8-8d9e-3fdbf403f800.jpg "Image of WatchDog")
+![Watchdog Image](https://user-images.githubusercontent.com/1810461/35637543-80db0f18-0682-11e8-8d9e-3fdbf403f800.jpg "Image of WatchDog" =250x)
 
 ## Prerequisites
 ### Hardware
