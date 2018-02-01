@@ -16,3 +16,14 @@ Uses a Raspberry Pi hard wired onto the motherboard of a mining rig and a switch
 ### Software
 * [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) installed on the Pi.
 * [The GPIO Utility](http://wiringpi.com/download-and-install/) installed on the Pi.
+
+## Install
+### Software
+1. Login to the pi using the pi user.
+2. Add the pi user to the crontab group.
+3. Clone/or extract zip this repo under /home/pi.
+4. Run the setup script to setup environment variables.
+5. Add the following cron jobs by running `crontab -e`:
+  * */15 * * * * /home/pi/mining-rig-watchdog/watchdog
+  * 0 0 * * * /home/pi/mining-rig-watchdog/reset
+
