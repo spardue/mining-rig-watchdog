@@ -22,9 +22,12 @@ Uses a Raspberry Pi hard wired onto the motherboard of a mining rig and a switch
 1. Login to the pi using the pi user.
 2. Add the pi user to the crontab group.
 3. Clone/or extract zip this repo under /home/pi.
+```
+git clone https://github.com/spardue/mining-rig-watchdog.git
+```
 4. Run the setup script to setup variables.
 ```
-cd /home/pi/mining-rig-watchdog
+cd mining-rig-watchdog
 ./setup.sh
 ```
 5. Add the following cron jobs by running `crontab -e`:
