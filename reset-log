@@ -1,4 +1,4 @@
 #bin/bash
 cat reset.log | while read epoch; do
-    date -d @$epoch
+   TZ=America/New_York date +"%a %F %r" -d @$epoch
 done | less
