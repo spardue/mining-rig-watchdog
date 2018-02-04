@@ -11,6 +11,9 @@ while true; do
 		"reset" "Powercycle then powerbutton" \
 		"powerbutton" "Press the powerbutton" \
 		"powercycle" "Flip the physical switch" \
+		"test-claymore" "Attempt to connect to claymore" \
+		"currentHashRate" "Current hash rate from Nanopool" \
 		"reset-log" "Shows the log of when the watchdog was activated"  2> /var//tmp/out || exit
 	./`cat /var/tmp/out` 
+	sleep 5
 done
